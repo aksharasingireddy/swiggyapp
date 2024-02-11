@@ -69,7 +69,7 @@ const Body=()=>{
 
     <div className="flex flex-wrap">
     {resList.map((restaurant) => (
-          <Link to={"./restaurants/" + restaurant?.info?.id}>
+          <Link to={"./restaurant/" + restaurant?.info?.id}>
          { restaurant.info.veg ? (<RestaurantCardVeg resData={restaurant} /> ):( <RestaurantCard key={restaurant?.info?.id} resData={restaurant} />)}
           </Link>
         ))}
